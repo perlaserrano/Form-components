@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-image: url(/images/bg-intro-desktop.png);
+    color: white;
+    background-color: #ff7978;
+}
+
+
+.text{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+.text h1{
+    margin-left: 10rem;
+    margin-top: 16rem;
+    font-size: 35px;
+}
+.text h2{
+    font-size: 15px;
+    margin-top: 2rem;
+    margin-left: 10rem;
+    font-weight: normal;
+}
+.button-purple{
+    margin-top: -18rem;
+    margin-left: 44rem;
+
+}
+.form{
+    background-origin: content-box;
+    margin-left: 0%;
+    margin-top: 6%;
+}
+ul{
+    list-style: none;
+}
+.card{
+    width: 100%;
+    margin-left: -43%;
+    margin-top: 5%;
+    height: 100%;
+}
