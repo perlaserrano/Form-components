@@ -20,7 +20,12 @@
     />
     <title>Form-Component</title>
   </head>
-  <body>
+  <body
+    style="
+      background: #ff7978;
+      background-image: url(/images/bg-intro-desktop.png);
+    "
+  >
     <div class="text">
       <h1>
         Learn to code by
@@ -36,47 +41,85 @@
         developers think is invaluable.
       </h2>
     </div>
-    
+
     <div class="button-purple">
-      <button type="submit">
+      <button class="button-purple-one" type="submit">
         Try it free 7 days then $20/mo. thereafter
       </button>
     </div>
 
-    <div class="container d-grid justify-content-end">
-     
-     
-     <div class="card">
-      <div class="form">
-        <form type="text">
-          <ul>
-            <li>
-              <input type="text" placeholder="First Name" />
-            </li>
-            <li>
-              <input type="text" placeholder="Last Name" />
-            </li>
-            <li>
-              <input type="text" placeholder="Email Address" />
-            </li>
-            <li>
-              <input type="text" placeholder="Password" />
-            </li>
-            <li>
-              <button type="submit">CLAIM YOUR FREE TRIAL</button>
-            </li>
-            <li>
-              <p>
-                By clicking the button, you are agreeing to our
-                <a>Terms and Services</a>
-              </p>
-            </li>
-          </ul>
-        </form>
+    <div class="d-grid justify-content-end contend">
+      <div class="card">
+        <div class="form">
+          <form onsubmit="submit" id="formLearn" class="text">
+            <ul>
+              <li>
+                <label for="firstname"></label>
+                <input
+                  id="FirstName"
+                  name="firstname"
+                  type="text"
+                  placeholder="First Name"
+                  required="required"
+                />
+              </li>
+              <br />
+              <li>
+                <label for="lastname"></label>
+                <input
+                 required="required"
+                  id="LastName"
+                  name="lastname"
+                  type="text"
+                  placeholder="Last Name"
+                />
+              </li>
+              <br />
+              <li>
+                <label for="emailaddress"></label>
+                <input
+                  id="EmailAddress"
+                  type="text"
+                  name="emailaddress"
+                  placeholder="Email Address"
+                  required="required"
+                />
+              </li>
+              <br />
+              <li>
+                <label for="password"></label>
+                <input
+                  id="Password"
+                  name="password"
+                  type="text"
+                  placeholder="Password"
+                  required="required"
+                />
+              </li>
+              <br />
+              <li>
+                <button
+                  onclick="click"
+                  class="button-green"
+                  <!--
+                  type="submit"
+                  --
+                >
+                  CLAIM YOUR FREE TRIAL
+                </button>
+              </li>
+              <br />
+              <li>
+                <p>
+                  By clicking the button, you are agreeing to our
+                  <span>Terms and Services</span>
+                </p>
+              </li>
+            </ul>
+          </form>
+        </div>
       </div>
-
-      </div>
-     
     </div>
+    <script src="/app.js"></script>
   </body>
 </html>
