@@ -1,32 +1,29 @@
 
 
-let formLearn =  document.getElementById('formLearn');
-let input = document.querySelectorAll('#formLearn input');
+const formLearn = document.getElementById('formLearn');
+const inputs = document.querySelectorAll('#formLearn input');
 
-function validateForm(e) {
-    console.log(e.target.name)
-
-    const handlerChange = (e) =>{
-       
-
-    }
-    
+function handlerChange(e) {
 }
 
-
-
-input.forEach((input) =>{
-    input.addEventListener('keyup', validateForm);
-    console.log('validate');
+inputs.forEach((input) =>{
+    input.addEventListener('keyup', handlerChange);
 });
 
 formLearn.addEventListener("submit", (e) =>{
     e.preventDefault();
-});
-formLearn.addEventListener("click", (e) =>{
-    e.preventDefault();
-});
+    
+    let data = {};
 
+    e.target.querySelectorAll("input").forEach((input) => {
+        data[input.name] = input.value;
+    })
+
+    console.log(data.firstname);
+
+
+
+});
 
 
 
