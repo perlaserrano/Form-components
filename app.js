@@ -57,9 +57,3 @@ formLearn.addEventListener("submit", (e) =>{
         }, false)
       })
   })()
-
-
-
-
-
-
