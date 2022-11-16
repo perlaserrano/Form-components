@@ -29,6 +29,7 @@ ul {
   list-style: none;
 }
 
+
 ul li input {
   width: 29rem;
   margin-left: 1rem;
@@ -97,7 +98,7 @@ span {
   .responsive-text {
     margin-top: -15rem;
     display: grid;
-    justify-content: center;
+    justify-content: normal !important;
     margin-left: -6rem;
   }
   
@@ -123,7 +124,7 @@ span {
     margin-left: 5rem;
     width: initial;
   }
-}@media(max-width:375px){
+}@media(min-width:375px){
   .card-responsive{
     margin-left: 5rem;
     width: initial;
@@ -140,6 +141,15 @@ span {
   }
 }
 @media(max-width:414px){
+  .inputs-form input{
+    padding: 15px;
+    width: 17rem;
+    margin-left: 0rem;
+    margin-right: 2rem;
+  }
+ 
+}
+@media(max-width:375px){
   .inputs-form input{
     padding: 15px;
     width: 17rem;
@@ -166,7 +176,57 @@ span {
 }
 @media(max-width:820px){
   .inputs-form input{
-    width: 26rem;
+    width: 21rem;
     margin-left: 0rem;
+  }
+}
+@media(min-width:540px){
+  .card-responsive{
+    margin-right: -8rem;
+    margin-left: 9rem;
+  }
+}@media(min-width:540px){
+  .inputs-form input{
+    width: 24rem;
+  }
+}@media(min-width:540px){
+  .button-purple-responsive{
+    margin-left: 6rem;
+    margin-right: -12rem;
+  }
+}@media(min-width:820px){
+  .card-responsive{
+    margin-left: 10rem;
+    margin-right: -6rem;
+  }
+}@media(min-width:768px){
+  .card-responsive{
+    margin-right: -7rem;
+    margin-left: 10rem;
+  }
+}
+@media(min-width:820px){
+  .button-purple-responsive{
+    width: 43rem;
+    margin-left: 7rem;
+  }
+}@media(min-width:768px){
+  .button-purple-responsive{
+    margin-right: -8rem;
+    margin-left: 7rem;
+  }
+}
+@media(min-width:912px){
+  .inputs-form input{
+    width: 20rem;
+  }
+}
+@media(min-width:1280px){
+  .card-responsive{
+    margin-right: -26rem;
+  }
+}@media(min-width:1280px){
+  .text{
+    margin-left: -9rem;
   }
 }
